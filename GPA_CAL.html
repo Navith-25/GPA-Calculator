@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" type="text/css">
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #218838;
+}
+
+p#tot {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+#disigner{
+    float: right;
+    font-weight:bold ;
+}
+legend{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>GPA CALCULATOR</legend>
+            <h2>CODSE23.1F</h2>
+            <div class="ics">
+                <label for="ics">ICS</label>
+                <select name="ics" id="ics">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="mc">
+                <label for="mc">MC</label>
+                <select name="mc" id="mc">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="eca">
+                <label for="eca">ECA</label>
+                <select name="eca" id="eca">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="pf">
+                <label for="pf">PF</label>
+                <select name="pf" id="pf">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="oop">
+                <label for="oop">OOP</label>
+                <select name="oop" id="oop">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="dbms">
+                <label for="dbms">DBMS</label>
+                <select name="dbms" id="dbms">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="cn">
+                <label for="cn">CN</label>
+                <select name="cn" id="cn">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="gad">
+                <label for="gad">GAD</label>
+                <select name="gad" id="gad">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="ead">
+                <label for="ead">EAD</label>
+                <select name="ead" id="ead">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="os">
+                <label for="os">OS</label>
+                <select name="os" id="os">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="dmw">
+                <label for="dmw">DMW</label>
+                <select name="dmw" id="dmw">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="se">
+                <label for="se">SE</label>
+                <select name="se" id="se">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="final">
+                <label for="final">Final Project</label>
+                <select name="final" id="final">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="ecs">
+                <label for="ecs">ECS</label>
+                <select name="ecs" id="ecs">
+                    <option value="">Plese Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <input type="button" value="Calculate" onclick="Calculate()"> 
+            <p id="tot"></p>
+            <div id="disigner">
+                <small><i>Designed by<br>
+                    NN</i>
+                </small>
+            </div>
+        </fieldset>
+    </form>
+
+    <script type="text/javascript">
+        function Calculate(){
+            var ics=document.getElementById("ics").value;
+            var mc = document.getElementById("mc").value;
+            var eca= document.getElementById("eca").value;
+            var pf =document.getElementById("pf").value;
+            var oop=document.getElementById("oop").value;
+            var dbms=document.getElementById("dbms").value;
+            var cn = document.getElementById("cn").value;
+            var gad= document.getElementById("gad").value;
+            var ead=document.getElementById("ead").value;
+            var os=document.getElementById("os").value;
+            var dmw=document.getElementById("dmw").value;
+            var se=document.getElementById("se").value;
+            var final=document.getElementById("final").value;
+            var ecs=document.getElementById("ecs").value;
+
+            var icsG=0;
+            var mcG=0;
+            var ecaG=0;
+            var pfG=0;
+            var oopG=0;
+            var dbmsG=0;
+            var cnG=0;
+            var gadG=0;
+            var eadG=0;
+            var osG=0;
+            var dmwG=0;
+            var seG=0;
+            var finalG=0;
+            var totalGPA=0;
+
+            switch(ics){
+                case "A+":
+                    icsG=4;
+                    break;
+                case "A":
+                    icsG=4;
+                    break;
+                case "A-":
+                    icsG=3.7;
+                    break;
+                case "B+":
+                    icsG=3.3;
+                    break;
+                case "B":
+                    icsG=3;
+                    break;
+                case "B-":
+                    icsG=2.7;
+                    break;
+                case "C+":
+                    icsG=2.3;
+                    break;
+                case "C":
+                    icsG=2;
+                    break;
+                case "F":
+                    icsG=0;
+                    break;
+            }
+            switch(mc){
+                case "A+":
+                    mcG=4;
+                    break;
+                case "A":
+                    mcG=4;
+                    break;
+                case "A-":
+                    mcG=3.7;
+                    break;
+                case "B+":
+                    mcG=3.3;
+                    break;
+                case "B":
+                    mcG=3;
+                    break;
+                case "B-":
+                    mcG=2.7;
+                    break;
+                case "C+":
+                    mcG=2.3;
+                    break;
+                case "C":
+                    mcG=2;
+                    break;
+                case "F":
+                    mcG=0;
+                    break;
+            }
+            switch(eca){
+                case "A+":
+                    ecaG=4;
+                    break;
+                case "A":
+                    ecaG=4;
+                    break;
+                case "A-":
+                    ecaG=3.7;
+                    break;
+                case "B+":
+                    ecaG=3.3;
+                    break;
+                case "B":
+                    ecaG=3;
+                    break;
+                case "B-":
+                    ecaG=2.7;
+                    break;
+                case "C+":
+                    ecaG=2.3;
+                    break;
+                case "C":
+                    ecaG=2;
+                    break;
+                case "F":
+                    ecaG=0;
+                    break;
+            }
+            switch(pf){
+                case "A+":
+                    pfG=4;
+                    break;
+                case "A":
+                    pfG=4;
+                    break;
+                case "A-":
+                    pfG=3.7;
+                    break;
+                case "B+":
+                    pfG=3.3;
+                    break;
+                case "B":
+                    pfG=3;
+                    break;
+                case "B-":
+                    pfG=2.7;
+                    break;
+                case "C+":
+                    pfG=2.3;
+                    break;
+                case "C":
+                    pfG=2;
+                    break;
+                case "F":
+                    pfG=0;
+                    break;
+            }
+            switch(oop){
+                case "A+":
+                    oopG=4;
+                    break;
+                case "A":
+                    oopG=4;
+                    break;
+                case "A-":
+                    oopG=3.7;
+                    break;
+                case "B+":
+                    oopG=3.3;
+                    break;
+                case "B":
+                    oopG=3;
+                    break;
+                case "B-":
+                    oopG=2.7;
+                    break;
+                case "C+":
+                    oopG=2.3;
+                    break;
+                case "C":
+                    oopG=2;
+                    break;
+                case "F":
+                    oopG=0;
+                    break;
+            }
+            switch(dbms){
+                case "A+":
+                    dbmsG=4;
+                    break;
+                case "A":
+                    dbmsG=4;
+                    break;
+                case "A-":
+                    dbmsG=3.7;
+                    break;
+                case "B+":
+                    dbmsG=3.3;
+                    break;
+                case "B":
+                    dbmsG=3;
+                    break;
+                case "B-":
+                    dbmsG=2.7;
+                    break;
+                case "C+":
+                    dbmsG=2.3;
+                    break;
+                case "C":
+                    dbmsG=2;
+                    break;
+                case "F":
+                    dbmsG=0;
+                    break;
+            }
+            switch(cn){
+                case "A+":
+                    cnG=4;
+                    break;
+                case "A":
+                    cnG=4;
+                    break;
+                case "A-":
+                    cnG=3.7;
+                    break;
+                case "B+":
+                    cnG=3.3;
+                    break;
+                case "B":
+                    cnG=3;
+                    break;
+                case "B-":
+                    cnG=2.7;
+                    break;
+                case "C+":
+                    cnG=2.3;
+                    break;
+                case "C":
+                    cnG=2;
+                    break;
+                case "F":
+                    cnG=0;
+                    break;
+            }
+            switch(gad){
+                case "A+":
+                    gadG=4;
+                    break;
+                case "A":
+                    gadG=4;
+                    break;
+                case "A-":
+                    gadG=3.7;
+                    break;
+                case "B+":
+                    gadG=3.3;
+                    break;
+                case "B":
+                    gadG=3;
+                    break;
+                case "B-":
+                    gadG=2.7;
+                    break;
+                case "C+":
+                    gadG=2.3;
+                    break;
+                case "C":
+                    gadG=2;
+                    break;
+                case "F":
+                    gadG=0;
+                    break;
+            }
+            switch(ead){
+                case "A+":
+                    eadG=4;
+                    break;
+                case "A":
+                    eadG=4;
+                    break;
+                case "A-":
+                    eadG=3.7;
+                    break;
+                case "B+":
+                    eadG=3.3;
+                    break;
+                case "B":
+                    eadG=3;
+                    break;
+                case "B-":
+                    eadG=2.7;
+                    break;
+                case "C+":
+                    eadG=2.3;
+                    break;
+                case "C":
+                    eadG=2;
+                    break;
+                case "F":
+                    eadG=0;
+                    break;
+            }
+            switch(os){
+                case "A+":
+                    osG=4;
+                    break;
+                case "A":
+                    osG=4;
+                    break;
+                case "A-":
+                    osG=3.7;
+                    break;
+                case "B+":
+                    osG=3.3;
+                    break;
+                case "B":
+                    osG=3;
+                    break;
+                case "B-":
+                    osG=2.7;
+                    break;
+                case "C+":
+                    osG=2.3;
+                    break;
+                case "C":
+                    osG=2;
+                    break;
+                case "F":
+                    osG=0;
+                    break;
+            }
+            switch(dmw){
+                case "A+":
+                    dmwG=4;
+                    break;
+                case "A":
+                    dmwG=4;
+                    break;
+                case "A-":
+                    dmwG=3.7;
+                    break;
+                case "B+":
+                    dmwG=3.3;
+                    break;
+                case "B":
+                    dmwG=3;
+                    break;
+                case "B-":
+                    dmwG=2.7;
+                    break;
+                case "C+":
+                    dmwG=2.3;
+                    break;
+                case "C":
+                    dmwG=2;
+                    break
+                case "F":
+                    dmwG=0;
+                    break;
+            }
+            switch(se){
+                case "A+":
+                    seG=4;
+                    break;
+                case "A":
+                    seG=4;
+                    break;
+                case "A-":
+                    seG=3.7;
+                    break;
+                case "B+":
+                    seG=3.3;
+                    break;
+                case "B":
+                    seG=3;
+                    break;
+                case "B-":
+                    seG=2.7;
+                    break;
+                case "C+":
+                    seG=2.3;
+                    break;
+                case "C":
+                    seG=2;
+                    break
+                case "F":
+                    seG=0;
+                    break;
+            }
+            switch(final){
+                case "A+":
+                    finalG=4;
+                    break;
+                case "A":
+                    finalG=4;
+                    break;
+                case "A-":
+                    finalG=3.7;
+                    break;
+                case "B+":
+                    finalG=3.3;
+                    break;
+                case "B":
+                    finalG=3;
+                    break;
+                case "B-":
+                    finalG=2.7;
+                    break;
+                case "C+":
+                    finalG=2.3;
+                    break;
+                case "C":
+                    finalG=2;
+                    break;
+                case "F":
+                    finalG=0;
+                    break;
+            }        
+
+            totalGPA=((icsG*3+mcG*3+ecaG*4+pfG*3+oopG*2+dbmsG*4+cnG*3+gadG*4+eadG*4+osG*4+dmwG*4+seG*4+finalG*3)/45);
+            document.getElementById("tot").innerHTML="Your GPA :"+totalGPA.toString();
+            alert("Your GPA :"+totalGPA);
+        }
+    </script>
+</body>
+</html>
